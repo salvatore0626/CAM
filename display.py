@@ -257,8 +257,8 @@ def main() -> None:
     screen = pygame.display.set_mode(WINDOW_SIZE, flags)
     pygame.display.set_caption("Helicopter Tour Tracker")
     clock = pygame.time.Clock()
-    font = pygame.font.SysFont(None, DEBUG_FONT_SIZE)
-    aircraft_label_font = pygame.font.SysFont(None, 14, bold=True)
+    font = pygame.font.Font(None, DEBUG_FONT_SIZE)
+    aircraft_label_font = pygame.font.Font(None, 14)
 
     map_surface = load_map_surface(WINDOW_SIZE)
     trail_surface = pygame.Surface(WINDOW_SIZE, pygame.SRCALPHA)
