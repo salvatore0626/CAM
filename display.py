@@ -26,7 +26,7 @@ FULLSCREEN = False
 FPS = 20
 
 # API / Tracking
-TAIL_NUMBER = "N8756S"
+TAIL_NUMBER = "N841AK"
 POLL_SECONDS = 10
 AIRPLANES_LIVE_URL = "https://api.airplanes.live/v2/reg/{tail}"
 REQUEST_TIMEOUT_SECONDS = 2.0
@@ -38,10 +38,10 @@ TRAIL_COLOR = (65, 65, 65, 110)
 TRAIL_MIN_PIXEL_STEP = 2
 
 # Map Bounds
-MAP_MAX_LAT = 29.96944
-MAP_MIN_LAT = 29.65627
-MAP_MIN_LON = -98.42326
-MAP_MAX_LON = -97.80553
+MAP_MAX_LAT = 29.92060
+MAP_MIN_LAT = 29.68267
+MAP_MIN_LON = -98.34542
+MAP_MAX_LON = -97.86065
 
 # Aircraft Marker
 HELICOPTER_RADIUS = 8
@@ -100,6 +100,12 @@ POIS = [
         "color": (173,4,246),
         "lat": 29.79023,
         "lon": -98.15426,
+    },
+    {
+        "name": "Test",
+        "color": (50,58,58),
+        "lat": 29.74102,
+        "lon": -98.09320,
     },
 ]
 
