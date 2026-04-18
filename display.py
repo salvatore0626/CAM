@@ -26,7 +26,7 @@ FULLSCREEN = False
 FPS = 20
 
 # API / Tracking
-TAIL_NUMBER = "N228NN"
+TAIL_NUMBER = "N8756S"
 POLL_SECONDS = 10
 AIRPLANES_LIVE_URL = "https://api.airplanes.live/v2/reg/{tail}"
 REQUEST_TIMEOUT_SECONDS = 2.0
@@ -54,7 +54,7 @@ HELIPAD_LAT = 29.80250
 HELIPAD_LON = -98.01392
 
 # UI
-DEBUG_FONT_SIZE = 12 
+DEBUG_FONT_SIZE = 16 
 
 # POI
 POI_RADIUS = 10
@@ -257,8 +257,8 @@ def main() -> None:
     screen = pygame.display.set_mode(WINDOW_SIZE, flags)
     pygame.display.set_caption("Helicopter Tour Tracker")
     clock = pygame.time.Clock()
-    font = pygame.font.SysFont("Arial", DEBUG_FONT_SIZE)
-    aircraft_label_font = pygame.font.SysFont("Arial", 14, bold=True)
+    font = pygame.font.SysFont(None, DEBUG_FONT_SIZE)
+    aircraft_label_font = pygame.font.SysFont(None, 14, bold=True)
 
     map_surface = load_map_surface(WINDOW_SIZE)
     trail_surface = pygame.Surface(WINDOW_SIZE, pygame.SRCALPHA)
